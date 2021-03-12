@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "schema for leverage output",
+  "type": "object",
+  "properties": {
+    "output": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "translation": {
+              "type": "string"
+            },
+            "score": {
+              "type": "number"
+            },
+            "products": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "translation",
+            "score",
+            "products"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "output"
+  ]
+}
