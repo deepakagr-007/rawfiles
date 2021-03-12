@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "schema for leverage input",
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "input",
+    "language"
+  ]
+}
